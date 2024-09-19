@@ -1,0 +1,20 @@
+class Animal:
+    def fazer_som(self):
+        pass
+
+class Cachorro(Animal):
+    def fazer_som(self):
+        return "Latido"
+
+class Gato(Animal):
+    def fazer_som(self):
+        return "Miau"
+
+def imprimir_som(animal):
+    print(animal.fazer_som())
+
+# Uso do polimorfismo
+animais = [Cachorro(), Gato()]
+
+for animal in animais:
+    imprimir_som(animal)
